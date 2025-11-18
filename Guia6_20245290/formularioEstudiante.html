@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Estudiante</title>
+  </head>
+  <body>
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="h-100 p-4 bg-light border rounded-3">
+            <h3>Datos de estudiantes</h3>
+            <form onsubmit="return false">
+              <div class="row mb-3">
+                <label for="inputCarnet" class="col-sm-2 col-form-label"
+                  >Carnet</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputCarnet" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputNombre" class="col-sm-2 col-form-label"
+                  >Nombre completo</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputNombre" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputDui" class="col-sm-2 col-form-label"
+                  >DUI</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputDui" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputNit" class="col-sm-2 col-form-label"
+                  >NIT</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputNit" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputFecha" class="col-sm-2 col-form-label"
+                  >Fecha nacimiento</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputFecha" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputCorreo" class="col-sm-2 col-form-label"
+                  >Correo electrónico</label
+                >
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputCorreo" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEdad" class="col-sm-2 col-form-label"
+                  >Edad</label
+                >
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="inputEdad" />
+                </div>
+              </div>
+
+              <button
+                type="button btn"
+                class="btn btn-success"
+                id="idBtnAgregar"
+              >
+                Registrar
+              </button>
+              <button type="reset" class="btn btn-reset" id="idBtnBorrar">
+                Borrar
+              </button>
+            </form>
+          </div>
+          <div
+            class="toast-container top-0 start-50 translate-middle-x pt-4 mt-1"
+            style="z-index: 1035"
+          >
+            <div
+              id="idNotificacion"
+              class="toast text-bg-danger"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            >
+              <div class="toast-header">
+                <i class="bi bi-bell"></i>
+                <strong class="me-auto">Notificacion</strong>
+                <small>Hace un momento</small>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="toast-body" id="idMensaje"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/formularioEstudiante.js" defer></script>
+  </body>
+</html>
