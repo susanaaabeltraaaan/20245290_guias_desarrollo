@@ -230,7 +230,7 @@ function verificarDatos(event) {
   if (event) event.preventDefault();
 
   let campoVacio = false;
-  arrayElements = newForm.querySelectorAll("input, select, textarea");
+  const arrayElements = newForm.querySelectorAll("input, select, textarea");
 
   for (let element of arrayElements) {
     if (element.type === "submit" || element.type === "button") continue;
